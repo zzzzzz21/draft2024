@@ -63,11 +63,6 @@ div#main {
       }
     }
 
-    &.dark-gray {
-      color: #fff;
-      background: #333333;
-    }
-
     &.red {
       color: #000;
       background: #ff0000;
@@ -84,6 +79,15 @@ div#main {
           color: #fff;
         }
       }
+    }
+
+    &.dark-gray {
+      color: #fff;
+      background: #333333;
+    }
+
+    &.light-gray {
+      background: #c8cbda;
     }
   }
 
@@ -244,6 +248,24 @@ div#main {
     max-width: 1000px;
     margin: 0 auto;
     padding: 65px 0 80px;
+
+    &.diary {
+      position: relative;
+      &::before {
+        background-image: url(../../img/special/draft2024/illust1.png);
+        background-repeat: no-repeat;
+        content: '';
+        height: 269px;
+        left: -85px;
+        top: 75px;
+        position: absolute;
+        width: 327px;
+      }
+    }
+  }
+
+  .program-title {
+    position: relative;
   }
 
   .program-title-text {
@@ -261,6 +283,15 @@ div#main {
     font-size: 36px;
     font-weight: bold;
     line-height: 1;
+  }
+
+  .program-title-main {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .program-title-image {
+    margin-top: 30px;
   }
 
   .program-content {
@@ -344,6 +375,15 @@ div#main {
     .program-title-text {
       font-size: 58px;
       margin-top: 30px;
+
+      img {
+        display: inline;
+        margin: 0 5px 5px 0;
+      }
+
+      &.diary {
+        line-height: 1.1;
+      }
     }
 
     .program-content {
@@ -364,6 +404,10 @@ div#main {
       font-size: 22px;
       font-weight: normal;
       line-height: 1.5;
+
+      &.diary {
+        margin-top: -30px;
+      }
     }
 
     .program-content-visual {
@@ -575,5 +619,56 @@ div#main {
     &::before {
       content: '→ ';
     }
+  }
+
+  .index {
+    display: flex;
+    gap: 25px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 15px 0 78px;
+    width: fit-content;
+  }
+
+  .index-title {
+    color: #999999;
+  }
+
+  .index-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .index-list-link {
+    font-size: 18px;
+
+    &::before {
+      content: '▼';
+      font-size: 16px;
+      margin-right: 4px;
+    }
+  }
+
+  .special {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+  }
+
+  .special-content,
+  .special-image {
+    flex: 1;
+  }
+
+  .special-image {
+    max-width: 480px;
+  }
+
+  .special-lead {
+    font-size: 18px;
+    line-height: 1.65;
+    margin: 15px 0 0;
   }
 }
