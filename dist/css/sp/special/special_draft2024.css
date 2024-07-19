@@ -62,7 +62,10 @@ footer {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.7;
-  margin-top: 12px;
+  padding-top: 12px;
+}
+.draft .center {
+  text-align: center !important;
 }
 .draft .head-icon img {
   height: auto;
@@ -539,9 +542,9 @@ footer {
   font-size: 10px;
   margin-right: 4px;
 }
-.draft .special-title {
+.draft .special-title img {
   height: auto;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   width: 54.5%;
 }
 .draft .special-content,

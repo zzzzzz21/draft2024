@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.sp-view {
+  display: none;
+}
+
 .c-sptv {
   text-align: center;
 }
@@ -64,9 +68,6 @@ div#main {
   font-size: 42px;
   padding: 80px 0 70px;
 }
-.draft .content-block.red .heading-title .sp-view {
-  display: none;
-}
 .draft .content-block.red .heading-title span {
   font-size: 32px;
   color: #fff;
@@ -78,8 +79,8 @@ div#main {
 .draft .content-block.light-gray {
   background: #c8cbda;
 }
-.draft .content-text {
-  font-size: 15px;
+.draft .content-text, .draft p {
+  font-size: 14px;
   line-height: 1.7;
 }
 .draft .top-title img {
@@ -199,7 +200,7 @@ div#main {
   font-weight: normal;
 }
 .draft .player-card-text {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.9;
   margin: 6px 0 0;
 }
@@ -260,11 +261,11 @@ div#main {
   margin: -10px 0 0 40px;
 }
 .draft .program-content-text {
-  font-size: 15px;
+  font-size: 16px;
 }
 .draft .program-content-link {
   margin-top: 2em;
-  font-size: 15px;
+  font-size: 16px;
 }
 .draft .program-content-link a img {
   display: inline-block;
@@ -301,8 +302,10 @@ div#main {
   padding: 40px 0;
   font-size: 32px;
   font-weight: bold;
-  text-align: center;
   line-height: 1.5;
+}
+.draft .center {
+  text-align: center !important;
 }
 .draft .road_to_draft .program-title-category {
   font-size: 18px;
@@ -336,7 +339,7 @@ div#main {
   line-height: 1.5;
 }
 .draft .road_to_draft .program-title-small.diary {
-  margin-top: -30px;
+  margin: -30px 0 1em;
 }
 .draft .road_to_draft .program-content-visual {
   position: absolute;
@@ -396,21 +399,16 @@ div#main {
 .draft .road_to_draft .program-column-detail {
   margin: 0 0 0 80px;
 }
-.draft .road_to_draft .program-column-title {
-  display: flex;
-  justify-content: space-between;
-}
 .draft .road_to_draft .program-column-title dt {
-  font-size: 22px;
-  line-height: 1;
-  font-weight: bold;
-}
-.draft .road_to_draft .program-column-title dd {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: normal;
 }
+.draft .road_to_draft .program-column-title dd {
+  font-size: 22px;
+  font-weight: bold;
+}
 .draft .road_to_draft .program-column-text {
-  font-size: 15px;
+  font-size: 16px;
   line-height: 2;
   margin: 10px 0 35px;
 }
@@ -493,7 +491,7 @@ div#main {
 .draft .article-column-date {
   align-items: center;
   display: flex;
-  font-size: 15px;
+  font-size: 16px;
 }
 .draft .article-column-date::before {
   content: "";
@@ -551,6 +549,13 @@ div#main {
 }
 .draft .special-image {
   max-width: 480px;
+}
+.draft .special-title {
+  font-size: 20px;
+}
+.draft .special-title img {
+  display: block;
+  margin: 0 0 0.4em;
 }
 .draft .special-lead {
   font-size: 18px;
