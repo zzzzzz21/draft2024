@@ -377,7 +377,7 @@ footer {
 .draft .road_to_draft .program-column-title {
   display: flex;
   gap: 10px;
-  justify-content: space-between;
+  flex-direction: column;
 }
 .draft .road_to_draft .program-column-title dt {
   font-size: 18px;
@@ -385,7 +385,7 @@ footer {
   font-weight: bold;
 }
 .draft .road_to_draft .program-column-title dd {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: normal;
 }
 .draft .road_to_draft .program-column-text {

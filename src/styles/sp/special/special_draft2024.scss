@@ -463,7 +463,8 @@ footer {
     .program-column-title {
       display: flex;
       gap: 10px;
-      justify-content: space-between;
+      //justify-content: space-between;
+      flex-direction: column;
 
       dt {
         font-size: 18px;
@@ -472,7 +473,7 @@ footer {
       }
 
       dd {
-        font-size: 12px;
+        font-size: 14px;
         font-weight: normal;
       }
     }
