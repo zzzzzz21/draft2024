@@ -417,6 +417,9 @@ footer {
 
     .program-column {
       margin-top: 40px;
+      a {
+        color: #fff;
+      }
     }
 
     .program-column-list {
@@ -438,6 +441,10 @@ footer {
         img {
           width: 100%;
         }
+      }
+      &-caption {
+        display: block;
+        margin-top: .5em;
       }
     }
 

@@ -340,6 +340,9 @@ footer {
 .draft .road_to_draft .program-column {
   margin-top: 40px;
 }
+.draft .road_to_draft .program-column a {
+  color: #fff;
+}
 .draft .road_to_draft .program-column-list {
   padding: 40px 0;
   border-top: 1px #fff solid;
@@ -357,6 +360,10 @@ footer {
 }
 .draft .road_to_draft .program-column-visual a img {
   width: 100%;
+}
+.draft .road_to_draft .program-column-visual-caption {
+  display: block;
+  margin-top: 0.5em;
 }
 .draft .road_to_draft .program-column-number {
   background: #ff0000;

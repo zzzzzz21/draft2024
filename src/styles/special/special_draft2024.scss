@@ -446,6 +446,9 @@ div#main {
 
     .program-column {
       margin-top: 50px;
+      a {
+        color: #fff;
+      }
     }
 
     .program-column-list {
@@ -463,6 +466,10 @@ div#main {
     .program-column-visual {
       flex: 0 0 360px;
       position: relative;
+      &-caption {
+        display: block;
+        margin-top: .5em;
+      }
     }
 
     .program-column-number {
