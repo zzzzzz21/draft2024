@@ -240,12 +240,14 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
     margin: 20px 0 0;
+    gap: 28px;
 
     .player-card {
-      //      width: calc((100% - 28px)/2);
+//      width: calc((100% - 28px)/2);
+      width: 100%;
 
       &:nth-of-type(n + 2) {
-        margin: 28px 0 0;
+//        margin: 28px 0 0;
       }
     }
   }

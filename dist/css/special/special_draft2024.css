@@ -167,19 +167,14 @@ div#main {
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 55px 0 0;
+  gap: 40px;
 }
 .draft .player-card {
-  width: 310px;
-  margin-right: 35px;
-}
-.draft .player-card:nth-of-type(3n) {
-  margin-right: 0;
-}
-.draft .player-card:nth-of-type(n + 4) {
-  margin-top: 40px;
+  width: calc((100% - 40px) / 2);
 }
 .draft .player-card-image {
   width: 100%;
+  height: auto;
 }
 .draft .player-card-copy {
   color: #999999;
